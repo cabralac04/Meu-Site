@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Cabo Verde – Paris 2024 | Alexander Cabral</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* TÍTULO */
+.reset-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reset-title h2 {
+  font-weight: 600;
+}
+
+/* REMOVE QUALQUER FUNDO DO CAROUSEL */
+.reset-carousel,
+.reset-carousel .carousel-inner,
+.reset-carousel .carousel-item {
+  background: transparent !important;
+}
+
+/* IMAGENS */
+.reset-carousel img {
+  width: 100%;
+  max-height: 650px;
+  object-fit: contain;
+  background: transparent; /* REMOVIDO O PRETO */
+  display: block;
+  margin: auto;
+}
+
+/* SETAS */
+.carousel-control-prev,
+.carousel-control-next {
+  background: transparent;
+  width: 6%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* setas brancas */
+}
+</style>
+</head>
+
+<body class="bg-page">
+
+
+<!-- HEADER -->
+<header class="text-center py-4">
+<h1 class="site-title">ALEXANDER CABRAL</h1>
+<p class="site-subtitle">VIDEOMAKER · PHOTOGRAPHER · DESIGNER · EDITOR</p>
+
+<nav class="menu-pill mt-3">
+<a href="index.html">HOME</a>
+<a href="film.html">FILM</a>
+<a href="design.html" class="active">DESIGN</a>
+<a href="photograph.html">PHOTOGRAPH</a>
+<a href="about.html">ABOUT</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+</header>
+
+<!-- CONTEÚDO -->
+<main class="container py-5">
+
+<!-- TÍTULO -->
+<div class="reset-title">
+<h2>TEAM CABO VERDE</h2>
+<p>Jogos Olímpicos · Paris 2024</p>
+</div>
+
+<!-- CAROUSEL -->
+<div id="teamcvCarousel" class="carousel slide teamcv-carousel" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="img/J/Jo_Test.png" alt="">
+</div>
+
+<div class="carousel-item">
+<img src="img/J/JO_David Pina.png" alt="">
+</div>
+
+<div class="carousel-item">
+<img src="img/J/JO_Djamila_.png" alt="">
+</div>
+
+<div class="carousel-item">
+<img src="img/J/JO_Nancy.png" alt="">
+</div>
+
+<div class="carousel-item">
+<img src="img/J/JO_Nancy_V2.png" alt="">
+</div>
+
+<div class="carousel-item">
+<img src="img/J/Jo_V2.png" alt="">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#teamcvCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#teamcvCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

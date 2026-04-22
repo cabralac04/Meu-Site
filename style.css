@@ -1,0 +1,190 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+ 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/* HERO / HOME */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url('img/textura.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+/* NOME */
+.name {
+font-size: 4.5rem;       
+font-weight: 700;
+letter-spacing: 4px;
+margin-bottom: 14px;
+}
+
+/* ROLES */
+.roles {
+font-size: 1.05rem;     
+letter-spacing: 3px;
+opacity: 0.85;
+margin-bottom: 42px;
+}
+
+/* MENU */
+.menu-pill {
+display: inline-flex;
+gap: 26px;
+padding: 14px 36px;    
+border-radius: 50px;
+border: 1px solid rgba(255,255,255,0.35);
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.menu-pill a {
+color: #fff;
+text-decoration: none;
+font-size: 0.9rem;      
+opacity: 0.75;
+position: relative;
+transition: opacity 0.3s ease;
+}
+
+.menu-pill a:hover,
+.menu-pill a.active {
+opacity: 1;
+}
+
+/* PÁGINAS INTERNAS */
+
+body.bg-page {
+ min-height: 100vh;
+background-image: url('img/textura_1.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* HEADER PADRÃO */
+.site-title {
+font-weight: 700;
+letter-spacing: 3px;
+}
+
+.site-subtitle {
+font-size: 0.85rem;
+letter-spacing: 2px;
+opacity: 0.8;
+}
+
+/* FILM / DESIGN CARDS */
+
+.film-card {
+background: #fff;
+border-radius: 16px;
+overflow: hidden;
+cursor: pointer;
+}
+
+.film-thumb {
+height: 480px;
+background-size: cover;
+background-position: center;
+transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.film-card:hover .film-thumb {
+transform: scale(1.05);
+filter: brightness(0.85);
+}
+
+.film-info {
+padding: 14px;
+text-align: center;
+}
+
+.film-info h5 {
+font-size: 1rem;
+color: #000;
+}
+
+/* DESIGN GRID */
+
+.design-card img {
+width: 100%;
+border-radius: 16px;
+transition: transform 0.4s ease;
+}
+
+.design-card:hover img {
+transform: scale(1.05);
+}
+
+/* CAROUSEL RESET */
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+background: transparent !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+background: transparent;
+width: 6%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: invert(1);
+}
+
+.carousel-item img {
+background: transparent;
+display: block;
+margin: auto;
+max-height: 80vh;
+object-fit: contain;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+.name {
+font-size: 3rem;
+}
+
+.roles {
+font-size: 0.9rem;
+}
+
+.menu-pill {
+gap: 18px;
+padding: 12px 26px;
+}
+
+.menu-pill a {
+font-size: 0.8rem;
+}
+
+}
